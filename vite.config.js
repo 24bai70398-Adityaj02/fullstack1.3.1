@@ -4,4 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  
+  preview: {
+    port: 4173,      // default preview port
+    open: true       // automatically open browser
+  }
 })
